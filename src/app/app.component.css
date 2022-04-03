@@ -1,0 +1,14 @@
+nav{
+    background-color: blue;
+    padding: 30px;
+}
+
+.button{
+    background-color: white;
+    color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
