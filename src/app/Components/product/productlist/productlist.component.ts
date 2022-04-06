@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { product } from '../../model/product';
+import { users } from '../../model/User';
 import { ProductComponent } from '../product.component';
 
 
@@ -11,7 +13,9 @@ import { ProductComponent } from '../product.component';
 export class ProductlistComponent implements OnInit {
 
  @Input() product:any ={}
+ 
   
+ public counter: number = 0;
   constructor() { }
 
   ngOnInit(): void {
@@ -21,4 +25,5 @@ export class ProductlistComponent implements OnInit {
   showproductdetails(){
     this.showDesc=!this.showDesc
   }
+
 }

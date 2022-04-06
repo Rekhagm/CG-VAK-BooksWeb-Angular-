@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { users } from '../model/User';
 
 @Component({
   selector: 'app-product',
@@ -279,5 +280,9 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  showForm=false;
+  
+  addUser(){
+    this.showForm=!this.showForm
+  }
 }
