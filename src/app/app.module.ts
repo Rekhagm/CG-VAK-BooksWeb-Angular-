@@ -9,6 +9,10 @@ import { ProductComponent } from './Components/product/product.component';
 import { ProductlistComponent } from './Components/product/productlist/productlist.component';
 import { UserComponent } from './Components/user/user.component';
 import { UsersComponent } from './Components/user/users/users.component';
+import { CounterBtnComponent } from './Components/counter/counter-btn/counter-btn.component';
+import { CounterComponent } from './Components/counter/counter.component';
+import { AddProductsComponent } from './Components/add-products/add-products.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import { UsersComponent } from './Components/user/users/users.component';
     ProductComponent,
     ProductlistComponent,
     UserComponent,
-    UsersComponent
+    UsersComponent,
+    CounterComponent,
+    CounterBtnComponent,
+    AddProductsComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

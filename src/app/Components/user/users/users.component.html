@@ -5,11 +5,12 @@
                     <img [src]="user.Image" width="150" height="150">
                 </div>
                 <div  class="col-md-8">
-                    <h2 [ngStyle]="{color: 'red'}">Name:{{user.name.firstname}} {{user.name.lastname}}</h2>
                     <div style="float:right;"> 
-                        <button *ngIf="!showDesc" class="btn btn-primary" style="font-size:24px"  (click)="showuserdetails()"> <i class="fa fa-plus"></i> UserDetails</button>
-                        <button *ngIf="showDesc" class="btn btn-primary" style="font-size:24px" (click)="showuserdetails()" > <i class="fa fa-minus">  UserDetails</i></button>
+                        <button *ngIf="!showDesc" class="btn btn-primary"   (click)="showuserdetails()"> <i class="fa fa-plus"></i> UserDetails</button>
+                        <button *ngIf="showDesc" class="btn btn-primary"  (click)="showuserdetails()" > <i class="fa fa-minus">  UserDetails</i></button>
                     </div>
+                    <h2 [ngStyle]="{color: 'red'}">Name:{{user.name.firstname}} {{user.name.lastname}}</h2>
+
                     <p *ngIf="showDesc">Email:{{user.email}}</p>
                     <p *ngIf="showDesc">Address:{{user.address.city}} {{user.address.street}}</p>
                     <p *ngIf="showDesc">UserName:{{user.username}}</p>

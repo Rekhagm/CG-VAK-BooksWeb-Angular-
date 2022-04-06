@@ -1,11 +1,11 @@
 nav{
-    background-color: blue;
+    background-color: lightsalmon;
     padding: 30px;
 }
 
 .button{
     background-color: white;
-    color: blue;
+    color: lightcoral;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
