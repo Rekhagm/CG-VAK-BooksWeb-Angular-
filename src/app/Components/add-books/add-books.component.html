@@ -1,0 +1,42 @@
+
+<div class="container-fluid">
+
+    <div class="row mt-4 mb-2">        
+        <div class="col-md-6">
+             <h2>
+                   Books Dashboard
+            </h2>
+        </div>
+        <div class="col-md-6 text-end">
+            <a href="/addbooks" class="btn btn-primary">Add Books</a>
+        </div>
+    </div>
+<table class="table table-hover rounded">
+    <thead class="table-primary">
+        <tr>
+            <!-- <th>Sl.No</th> -->
+            <th>Title</th>
+            <th>Description</th>
+             <th>Price</th>
+             <th>ISBN</th>
+             <th>Author</th>
+             <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let book of books" >
+            
+           <!-- <th>{{book.id}}</th>  -->
+            <td>{{book.title}}</td>
+            <td>{{book.description}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.isbn}}</td>
+            <td>{{book.author}}</td>
+            <td>
+                <a type="button" routerLink="/editbooks/{{book.id}}"  class="btn btn-sm btn-secondary"><i class="bi bi-pencil-square"></i></a>
+                <a type="button" routerLink="/deletebooks/{{book.id}}"  class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></a>
+            </td>
+       </tr>
+       
+    </tbody>
+</table>

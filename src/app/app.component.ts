@@ -9,7 +9,7 @@ import {ApiService} from './api.service';
 export class AppComponent {
   title = 'Template-2App';
 
-
+loginstatus=true;
 constructor() {}
 
 
